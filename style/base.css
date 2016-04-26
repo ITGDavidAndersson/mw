@@ -1,0 +1,103 @@
+@font-face {
+	font-family: symbols;
+	src: url(../icons/icomoon.ttf);
+}
+body {
+	margin: 0pt 0pt 0pt 0pt;
+	height: 100vh;
+}
+#all {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+}
+#content * {
+	line-height: auto;
+}
+#menu {
+	height: 100vh;
+	background-color: #052D26;
+	align-self: stretch;
+	border-right: 1px solid #58D400;
+	left: 0pt;
+	position: fixed;
+}
+#menu * {
+	color: #58D400;
+	vertical-align: middle;
+}
+#menu *[onclick] {
+	color: #00987F;
+	cursor: pointer;
+	transition: color 100ms;
+}
+#menu *[onclick]:hover {
+	color: #00F2CA;
+}
+#menu > div > div {
+	padding: 10pt 0pt;
+}
+#menu > div:nth-of-type(2) {
+	max-height: 0vh;
+	overflow: hidden;
+	transition: max-height 500ms;
+}
+#content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+#content > div {
+	align-self: stretch;
+	width: 100%;
+	margin: 0pt;
+	overflow: hidden;
+}
+.cat {
+	white-space: nowrap;
+}
+.cat > span:nth-of-type(2) {
+	display: inline-block;
+	max-width: 0vw;
+	overflow: hidden;
+	margin: 0pt;
+	transition: max-width 200ms;
+}
+.cat > span:nth-of-type(2) > span {
+	display: inline-block;
+	padding: 0pt 5pt;
+	margin: 0pt 5pt;
+}
+.symbols {
+	font-family: symbols;
+}
+.size1 {
+	font-size: 500%;
+}
+.size2 {
+	font-size: 400%;
+}
+.size3 {
+	font-size: 300%;
+}
+.size4 {
+	font-size: 200%;
+}
+.size5 {
+	font-size: 180%;
+}
+.size6 {
+	font-size: 150%;
+}
+.size7 {
+	font-size: 125%;
+}
+.size8 {
+	font-size: 100%;
+}
+.size9 {
+	font-size: 80%;
+}
